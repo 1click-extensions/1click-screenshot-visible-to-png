@@ -1,1 +1,1 @@
-Merge windows to tabs
+1click screenshot visible window to png
