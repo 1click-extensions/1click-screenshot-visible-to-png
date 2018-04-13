@@ -1,0 +1,81 @@
+.one-click-img-wrap{
+	position: fixed;
+	width: 100%;
+	top:0;
+	left:0;
+	z-index: 99999;
+	overflow: scroll;
+	text-align: center;
+	direction: ltr;
+	background: white;
+
+}
+#one-click-img-canvas{
+	width: 100%;
+}
+.one-click-cover{
+	z-index: 9999999;
+	position: fixed;
+	top:0;
+	display: none;
+	width: 100%;
+	cursor: pointer
+}
+.click1-picker-mode .one-click-cover{
+	display: block;
+}
+.one-click-cover-color{
+	/*width: 700px;*/
+	height: 40px;
+	padding: 10px 0;
+	/*background: rgba(255,255,255,0.2);*/
+	background: #fff;
+	box-sizing: border-box;
+	border: 1px solid black;
+	display: inline-block;
+}
+.one-click-cover-input{
+	margin: 0 10px;
+	display: none;
+	text-align: left;
+	direction: ltr;
+	
+}
+.one-click-cover-input input{
+	width: 120px;
+}
+.one-click-cover-example{
+	height: 20px;
+	width: 20px;
+	border: 1px solid black;
+	outline: 1px solid white;
+	display: none;
+}
+.one-click-cover-color-selected .one-click-cover-example,
+.one-click-cover-color-selected .one-click-cover-input{
+	display: inline-block;
+}
+.one-click-cover-before-select{
+	padding: 0 10px;
+}
+.one-click-cover-color-selected .one-click-cover-before-select{
+	display: none;
+}
+.one-click-cover-child{
+	vertical-align: middle;
+}
+.one-click-cover-close {
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 0;
+    padding: 2px 5px;
+    font-size: 14px;
+    background: #e40000;
+    color: #fff;
+    font-weight: bold;
+    height: auto!important;
+    min-height: auto!important;
+}
+.one-click-cover-close:hover{
+	color: #000;
+}

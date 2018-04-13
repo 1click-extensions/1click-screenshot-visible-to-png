@@ -1,0 +1,7 @@
+{
+  "browser_action": {"message": "בחר צבע" },
+  "ext_desc": {"message": "דגום צבע מכל מקום בדף" },
+  "ext_name": {"message": "דגום צבע בלחיצה אחת" },
+  "choose_color_from_page": {"message": "בחר צבע מהדף" }
+}
+

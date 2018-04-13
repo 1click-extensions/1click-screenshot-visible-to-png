@@ -1,0 +1,6 @@
+{
+  "browser_action": {"message": "Save visible window" },
+  "ext_desc": {"message": "Save visible window in one click" },
+  "ext_name": {"message": "1click Save Visible Window" }
+}
+
