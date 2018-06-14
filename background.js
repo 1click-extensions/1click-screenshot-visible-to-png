@@ -22,7 +22,7 @@ function b64toBlob(b64Data, contentType, sliceSize) {
   return blob;
 }
 
-
+localStorage.addSizes = 1;
 chrome.runtime.setUninstallURL("https://1ce.org");
 
 if (!localStorage.created) {
@@ -34,7 +34,7 @@ if (!localStorage.created) {
 //console.log(chrome.browserAction.onClicked);
 chrome.browserAction.onClicked.addListener(function(tab){
   console.log('clicke',tab);
-  chrome.tabs.captureVisibleTab(null,{format:'png'}, function(img){
+  chrome.tabs.captureVisibleTab(null,{format:'jpeg'}, function(img){
     var i = new Image(); 
 
     i.onload = function(){
@@ -47,7 +47,7 @@ chrome.browserAction.onClicked.addListener(function(tab){
       //console.log(filename);
       chrome.downloads.download({
         url: url,
-        filename: (filename) + (localStorage.addSizes ? '-' + i.width + "-" + i.height : '') +'.png'
+        filename: (filename) + (localStorage.addSizes ? '-' + i.width + "-" + i.height : '') +'.jpg'
       });
     };
 
